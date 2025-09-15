@@ -13,18 +13,19 @@ or / both configs (I use both)
 brew install mutt
 which mutt & mutt -v 
 
-- Check your `bash` or `zprofile`
+Check your zprofile
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 source ~/.zprofile
 
-- Create folders used by mutt
+Create folders used by mutt
+
 mkdir -p ~/.mutt/{accounts,colors,cache/headers,cache/bodies}
 touch ~/.mutt/certificates
 
-- Create your main config ~/.muttrc
+Create your main config ~/.muttrc
 mkdir ~/.muttrc
-
+```
 --------------------------
 
 ############################################
@@ -52,7 +53,7 @@ bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
 
 -------------------------------
-
+```
 Create your account email config file
 
 code .  ~/.mutt/accounts/gmail.muttrc
@@ -72,6 +73,7 @@ code .  ~/.mutt/accounts/comcast.muttrc
 
 
 ----------------------------------
+```
 
 ############################################
 # Example GMAIL Account setup 
@@ -106,15 +108,15 @@ set imap_keepalive = 900
 
 ----------------------------------------------
 
-NetRC Config
+## Netrc Config Setup
 
--  create a space to store credentials (safer storage) store passwords in ~/.netrc
+- Create a space to store credentials (safer storage) store passwords in ~/.netrc
 
 run:
-chmod 600 ~/.netrc
+`chmod 600 ~/.netrc`
 
 
-- netrc should contain the info below
+- netrc should contain the info below replace with your email login and app generated password 
 
 machine imap.gmail.com login your.email@gmail.com password <APP PASSWORD>
 machine smtp.gmail.com login your.email@gmail.com password <APP PASSWORD>
@@ -122,21 +124,21 @@ machine smtp.gmail.com login your.email@gmail.com password <APP PASSWORD>
 ------------------------------------------------
 
 
-Enable Gmail access
-    •	In Gmail settings → Security, enable 2FA.
-	•	Generate an App Password and use that instead of your real Gmail password.
+### Enable Gmail access
+-	In Gmail settings → Security, enable 2FA. 2FA must be enabled!
+-	Generate an App Password and use that instead of your real Gmail password.
 
 
 ---------------------------------------
 
-Test 
+### Test 
 
-run: mutt 
+- run: `mutt`
 
 or 
 
-run: neomutt 
+- run: `neomutt` 
 
 Hit c to change folders, m to compose, q to quit.
 
-A minimal but secure setup, for sending and receiving emails in your terminal using mutt.
+A minimal but secure setup, for sending and receiving emails in your terminal using mutt. 
