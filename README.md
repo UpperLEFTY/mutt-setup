@@ -117,7 +117,7 @@ run:
 `chmod 600 ~/.netrc`
 
 
-- netrc should contain the info below replace with your email login and app generated password 
+- Netrc should contain the info below replace with your email login and app generated password 
 
 - machine imap.gmail.com login your.email@gmail.com password <APP PASSWORD>
 - machine smtp.gmail.com login your.email@gmail.com password <APP PASSWORD>
