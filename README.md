@@ -28,7 +28,7 @@ mkdir ~/.muttrc
 
 ```
 
---------------------------;
+--------------------------
 
 ```bash
 
@@ -76,7 +76,7 @@ code .  ~/.mutt/accounts/comcast.muttrc
 
 
 
-----------------------------------;
+----------------------------------
 
 
 ############################################
@@ -111,7 +111,7 @@ set ssl_verify_dates = yes
 set move = no
 set imap_keepalive = 900
 
-----------------------------------------------;
+----------------------------------------------
 
 ```
 
@@ -127,14 +127,14 @@ run:
 - machine imap.gmail.com login your.email@gmail.com password <APP PASSWORD>
 - machine smtp.gmail.com login your.email@gmail.com password <APP PASSWORD>
 
-------------------------------------------------;
+------------------------------------------------
 
 #### Enable Gmail access
 
 - In Gmail settings → Security, enable 2FA. 2FA must be enabled!
 - Generate an App Password and use that instead of your real Gmail password.
 
-----------------------------------------------------;
+----------------------------------------------------
 
 ##### Test
 
