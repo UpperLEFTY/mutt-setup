@@ -27,8 +27,11 @@ Create your main config ~/.muttrc
 mkdir ~/.muttrc
 
 ```
---------------------------
-```
+
+--------------------------;
+
+```bash
+
 ############################################
 # Master mutt config
 ############################################
@@ -73,12 +76,13 @@ code .  ~/.mutt/accounts/comcast.muttrc
 
 
 
-----------------------------------
+----------------------------------;
 
 
 ############################################
 # Example GMAIL Account setup 
 ############################################
+
 set realname = "Test User"
 set from     = "testuser@gmail.com"
 set use_from = yes
@@ -107,39 +111,42 @@ set ssl_verify_dates = yes
 set move = no
 set imap_keepalive = 900
 
-----------------------------------------------
+----------------------------------------------;
+
 ```
-###### Netrc Config Setup
+
+### Netrc Config Setup
 
 - Create a space to store credentials (safer storage) store passwords in ~/.netrc
 
 run:
 `chmod 600 ~/.netrc`
 
-
-- Netrc should contain the info below replace with your email login and app generated password 
+- Netrc should contain the info below replace with your email login and app generated password
 
 - machine imap.gmail.com login your.email@gmail.com password <APP PASSWORD>
 - machine smtp.gmail.com login your.email@gmail.com password <APP PASSWORD>
 
-------------------------------------------------
+------------------------------------------------;
 
+#### Enable Gmail access
 
-###### Enable Gmail access
--	In Gmail settings → Security, enable 2FA. 2FA must be enabled!
--	Generate an App Password and use that instead of your real Gmail password.
+- In Gmail settings → Security, enable 2FA. 2FA must be enabled!
+- Generate an App Password and use that instead of your real Gmail password.
 
+----------------------------------------------------;
 
----------------------------------------
-
-###### Test 
+##### Test
 
 - run: `mutt`
 
-or 
+- run: `mutt`
 
-- run: `neomutt` 
+or
+
+- run: `neomutt`
 
 Hit c to change folders, m to compose, q to quit.
 
-A minimal but secure setup, for sending and receiving emails in your terminal using mutt. 
+A minimal but secure setup, for sending and receiving emails in your terminal using mutt.
+[EOF]
